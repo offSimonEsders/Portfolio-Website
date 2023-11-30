@@ -1,0 +1,131 @@
+.introduction-frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100vw;
+    width: 100vw;
+    height: 100vh;
+    background-color: #141D2F;
+}
+
+.blue-shadow {
+    position: fixed;
+    left: -350px;
+}
+
+.green-shadow {
+    position: fixed;
+    right: -420px;
+    rotate: -27deg;
+    filter: blur(16.5px);
+}
+
+.introduction-content {
+    position: relative;
+    max-width: 1440px;
+    width: 100%;
+    z-index: 1;
+}
+
+.name-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    gap: 87px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    h2 {
+        max-width: none;
+        margin: 0;
+        color: white;
+    }
+
+}
+
+.name-under-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.talk-button {
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 15px 30px;
+    gap: 10px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: 23px;
+    background: #00BEE8;
+    color: white;
+    transition: 150ms;
+
+    &:hover {
+        scale: 1.2;
+        background: #4B47FF;
+    }
+
+}
+
+.oblique-text {
+    writing-mode: vertical-lr;
+    rotate: 180deg;
+    font-size: 90px;
+}
+
+.sideway-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.name-tag {
+    display: flex;
+    white-space: nowrap;
+    font-size: 128px;
+}
+
+.job-tag {
+    font-size: 64px;
+    color: #4B47FF !important;
+}
+
+.link-container {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 50px;
+    gap: 25px;
+    z-index: 1;
+
+    a {
+        transition: 150ms;
+
+        &:hover {
+            scale: 1.2;
+        }
+
+    }
+
+}
+
+.scrolldown-button {
+    display: flex;
+    justify-content: center;
+    border: none;
+    writing-mode: vertical-lr;
+    position: fixed;
+    right: 100px;
+    bottom: 50px;
+    gap: 3px;
+    z-index: 1;
+    font-size: 23px;
+    color: white;
+    background-color: transparent;
+}

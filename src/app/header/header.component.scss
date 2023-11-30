@@ -2,8 +2,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    position: sticky;
-    position: 0;
+    position: absolute;
+    max-width: 100vw;
+    width: 100%;
+    top: 0;
     background: var(--style-1-syle-1-a-green-purple-blue-bg, #141D2F);
     backdrop-filter: blur(32.5px);
     color: white;
