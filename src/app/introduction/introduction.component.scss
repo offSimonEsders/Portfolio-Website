@@ -11,6 +11,7 @@
 
 .blue-shadow {
     position: absolute;
+    height: 650px;
     left: -350px;
 }
 
@@ -19,11 +20,12 @@
     overflow: hidden;
     top: 50px;
     right: 0;
-    max-width: 380px;
+    max-width: 280px;
     padding: 50px;
 }
 
 .green-shadow {
+    height: 650px;
     rotate: -27deg;
     filter: blur(32px);
 }
