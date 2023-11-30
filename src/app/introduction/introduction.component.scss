@@ -9,12 +9,12 @@
 }
 
 .blue-shadow {
-    position: fixed;
+    position: absolute;
     left: -350px;
 }
 
 .green-shadow {
-    position: fixed;
+    position: absolute;
     right: -420px;
     rotate: -27deg;
     filter: blur(16.5px);
