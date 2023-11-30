@@ -59,3 +59,16 @@
     position: absolute;
     height: 600px;
 }
+
+.curve-container {
+    pointer-events: none;
+    position: absolute;
+    overflow: hidden;
+    top: 170vh;
+    width: 100%;
+    height: 400px;
+}
+
+.curve-img {
+    width: 100%;
+}
