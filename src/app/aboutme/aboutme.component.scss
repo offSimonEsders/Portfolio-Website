@@ -1,6 +1,7 @@
 .aboutme-frame {
     display: flex;
     justify-content: center;
+    position: relative;
     height: 100vh;
     color: white;
     background-color: #141D2F;
@@ -41,34 +42,53 @@
     gap: 35px;
 }
 
+.big-img-frame {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0px;
+    z-index: 1;
+}
+
 .big-img-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    height: 600px;
+    position: relative;
+    height: 500px;
     width: 500px;
+    overflow: hidden;
+}
+
+.big-ellips-img {
+    width: 500px;
+    height: 500px;
+    z-index: 1;
+}
+
+.big-self-img {
+    position: absolute;
+    height: 500px;
+    border-radius: 360px;
+}
+
+.background-decoration-img {
+    display: flex;
+    align-items: center;
+    position: absolute;
     top: 50%;
     transform: translateY(-50%);
     right: 100px;
-    height: 650px;
-    overflow: hidden;
+
+    img {
+        filter: blur(46.5px);
+    }
 }
 
-.big-front-img {
+.blueshadow-img {
     position: absolute;
-    height: 600px;
-}
-
-.curve-container {
-    pointer-events: none;
-    position: absolute;
-    overflow: hidden;
-    top: 170vh;
-    width: 100%;
-    height: 400px;
-}
-
-.curve-img {
-    width: 100%;
+    rotate: 45deg;
 }
