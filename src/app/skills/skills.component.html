@@ -1,3 +1,16 @@
 <div class="skillsframe">
-    <div class="skillscontent"></div>
+
+    <div class="skillscontent">
+
+        <div class="skillsymbol-container">
+
+            <div *ngFor="let skill of skills" class="skill">
+                <img src="../../assets/icons/{{ skill }}.svg" alt="">
+                <p>{{ skill }}</p>
+            </div>
+
+        </div>
+
+    </div>
+
 </div>
