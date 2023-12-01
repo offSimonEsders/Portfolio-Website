@@ -3,6 +3,7 @@
     justify-content: center;
     position: relative;
     height: 100vh;
+    max-height: 1440px;
     color: white;
     background-color: #141D2F;
 }
@@ -10,7 +11,7 @@
 .aboutme-content {
     display: flex;
     position: relative;
-    max-width: 1240px !important;
+    max-width: 1740px !important;
     width: 100%;
     padding: 37px 100px;
 }
