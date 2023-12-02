@@ -11,15 +11,14 @@
     position: relative;
     max-width: 1920px;
     width: 100%;
+    gap: 116px;
 }
 
 .portfolio-header {
     display: flex;
     flex-direction: column;
-    position: absolute;
     gap: 35px;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100%;
 
     .header-lines {
         display: flex;
@@ -46,4 +45,10 @@
         color: white;
     }
 
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
