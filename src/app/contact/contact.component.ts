@@ -76,7 +76,7 @@ export class ContactComponent implements AfterViewInit {
   }
 
   async fetchFormspree(fd: FormData) {
-    return await fetch('https://formspree.io/f/moqoozva', {
+    return await fetch('https://formspree.io/f/xqkvvoen', {
       method: 'POST', body: fd, headers: {
         'Accept': 'application/json'
       }
