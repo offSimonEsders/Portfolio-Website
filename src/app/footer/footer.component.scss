@@ -6,7 +6,39 @@
 
 .footer-content {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 37px 100px;
-    max-width: 1440px;
+    max-width: 1720px;
     height: calc(100% - 74px);
+
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        color: white;
+
+        &:nth-child(1) {
+            h2 {
+                margin: 0;
+                font-size: 40px;
+            }
+
+            p{
+                margin: 0;
+                font-size: 16px;
+            }
+        }
+
+        &:nth-child(2) {
+            font-size: 23px;
+        }
+
+        &:nth-child(3) {
+            flex-direction: row;
+            gap: 42px;
+        }
+
+    }
+
 }
