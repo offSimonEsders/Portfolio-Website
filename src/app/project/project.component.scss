@@ -5,8 +5,18 @@
     flex-direction: row;
     gap: 32px;
 
-    img {
-        height: 340px;
+    .img-container {
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 240px;
+        width: 500px;
+
+        img {
+            height: 400px;
+        }
+
     }
 
     .info-container {
@@ -14,22 +24,32 @@
         flex-direction: column;
         max-width: 500px;
         width: 100%;
+        gap: 35px;
 
-        h2 {
-            font-size: 32px;
-            color: #4B47FF;
-        }
-
-        .skills {
+        .text-container {
             display: flex;
-            flex-direction: row;
-            font-size: 23px;
-            color: #00BEE8;
-        }
+            flex-direction: column;
+            gap: 15px;
 
-        .description {
-            font-size: 16px;
-            color: white;
+            h2 {
+                margin: 0;
+                font-size: 32px;
+                color: #4B47FF;
+            }
+    
+            .skills {
+                display: flex;
+                flex-direction: row;
+                font-size: 23px;
+                color: #00BEE8;
+            }
+    
+            .description {
+                margin: 0;
+                font-size: 16px;
+                color: white;
+            }
+
         }
 
         .link-container {

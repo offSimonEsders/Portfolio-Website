@@ -9,4 +9,20 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  scrollToSkills() {
+    let element = document.getElementById('myskills');
+    if (element) {
+      const Coordinate = element.getBoundingClientRect().top + window.pageYOffset - 250;
+      window.scrollTo({ top: Coordinate, behavior: 'smooth' });
+    }
+  }
+
+  scrollToProjects() {
+    let element = document.getElementById('projects');
+    if (element) {
+      const Coordinate = element.getBoundingClientRect().top + window.pageYOffset - 150;
+      window.scrollTo({ top: Coordinate, behavior: 'smooth' });
+    }
+  }
+
 }

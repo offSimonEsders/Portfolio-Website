@@ -10,6 +10,6 @@ import { NgFor } from '@angular/common';
   styleUrl: './project.component.scss'
 })
 export class ProjectComponent {
-  join = new Project('Join', 'Javascript | HTML | CSS', 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.', 'link');
+  join = new Project('Join', 'Javascript | HTML | CSS', 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.', 'join.simon-esders.de', '');
   projects = [this.join];
 }

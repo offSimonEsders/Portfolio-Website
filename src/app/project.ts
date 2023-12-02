@@ -2,11 +2,14 @@ export class Project {
     name: string;
     usedskills: string;
     description: string;
-    link: string;
-    constructor(name: string, usedskills: string, description: string, link: string) {
+    livelink: string;
+    githublink: string;
+    
+    constructor(name: string, usedskills: string, description: string, livelink: string, githublink: string) {
         this.name = name;
         this.usedskills = usedskills;
         this.description = description;
-        this.link = link;
+        this.livelink = livelink;
+        this.githublink = githublink;
     }
 }
