@@ -9,11 +9,18 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  scrollToAbout() {
+    let element = document.getElementById('aboutme');
+    if (element) {
+      element.scrollIntoView({ block: 'start' });
+    }
+  }
+
   scrollToSkills() {
     let element = document.getElementById('myskills');
     if (element) {
       const Coordinate = element.getBoundingClientRect().top + window.pageYOffset - 250;
-      window.scrollTo({ top: Coordinate, behavior: 'smooth' });
+      window.scrollTo({ top: Coordinate });
     }
   }
 
@@ -21,7 +28,7 @@ export class HeaderComponent {
     let element = document.getElementById('projects');
     if (element) {
       const Coordinate = element.getBoundingClientRect().top + window.pageYOffset - 150;
-      window.scrollTo({ top: Coordinate, behavior: 'smooth' });
+      window.scrollTo({ top: Coordinate });
     }
   }
 
