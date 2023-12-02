@@ -1,0 +1,14 @@
+<div class="project" *ngFor="let project of projects">
+    <img src="../../assets/projects/{{project['name']}}.png" alt="">
+    <div class="info-container">
+        <h2>{{project['name']}}</h2>
+        <div class="skills">
+            {{project['usedskills']}}
+        </div>
+        <p class="description">{{project['description']}}</p>
+        <div class="link-container">
+            <a href="#" class="live-test">Live test</a>
+            <a href="#" class="git-hub">Github</a>
+        </div>
+    </div>
+</div>

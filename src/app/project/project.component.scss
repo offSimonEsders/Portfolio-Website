@@ -1,0 +1,64 @@
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 32px;
+
+    img {
+        height: 340px;
+    }
+
+    .info-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+        width: 100%;
+
+        h2 {
+            font-size: 32px;
+            color: #4B47FF;
+        }
+
+        .skills {
+            display: flex;
+            flex-direction: row;
+            font-size: 23px;
+            color: #00BEE8;
+        }
+
+        .description {
+            font-size: 16px;
+            color: white;
+        }
+
+        .link-container {
+            display: flex;
+            flex-direction: row;
+            gap: 86px;
+
+            a {
+                text-decoration: none;
+                display: flex;
+                padding: 15px 30px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                border-radius: 10px;
+                font-size: 23px;
+                color: white;
+            }
+
+            .live-test {
+                background: #4B47FF;
+            }
+    
+            .git-hub {
+                border: 1px solid #00BEE8;
+            }
+
+        }
+
+    }
+
+}
