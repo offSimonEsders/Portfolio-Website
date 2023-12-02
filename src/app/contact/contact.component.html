@@ -19,16 +19,16 @@
                 </p>
             </div>
 
-            <form action="" class="contact-form">
+            <form (submit)="sendmail($event)" method="POST" class="contact-form">
                 <div class="contact-form-input-container">
-                    <input type="text" placeholder="Your name" class="contact-form-inputs" required>
-                    <input type="email" placeholder="Your email" class="contact-form-inputs" required>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Your message" class="contact-form-inputs"
+                    <input type="text" placeholder="Your name" name="name" class="contact-form-inputs" required>
+                    <input type="email" placeholder="Your email" name="email" class="contact-form-inputs" required>
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Your message" class="contact-form-inputs"
                         required></textarea>
                 </div>
 
                 <div class="contact-agreement">
-                    <input (change)="state()" type="checkbox" name="" id="privacy-policy-check" required>
+                    <input (change)="state()" type="checkbox" id="privacy-policy-check" required>
                     <label for="privacy-policy-check" class="custom-checkbox"></label>
                     <p>I've read the</p>
                     &nbsp;
@@ -42,6 +42,8 @@
             </form>
 
         </div>
+
+        <div class="send-mail-response">Mail was send</div>
 
     </div>
 

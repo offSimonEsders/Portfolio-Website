@@ -183,3 +183,31 @@
 .privacy-policy-unchecked {
     background-color: #B6B6B6 !important;
 }
+
+.send-mail-response {
+    display: none;
+    position: fixed;
+    width: max-content;
+    bottom: 50px;
+    right: -500px;
+    padding: 15px 50px;
+    border-radius: 10px 0 0 10px;
+    color: white;
+    background-color: #4B47FF;
+    animation: show-mail-response 4s;
+}
+
+@keyframes show-mail-response {
+    0% {
+        right: -500px;
+    }
+    30% {
+        right: 0px;
+    }
+    80% {
+        right: 0px;
+    }
+    100% {
+        right: -500px;
+    }
+}
