@@ -1,6 +1,9 @@
-.contact-content {
+.contact-frame {
+    display: flex;
+    justify-content: center;
     background-color: #141D2F;
-    height: 100vh;
+    max-height: 1440px;
+    height: 800px;
 }
 
 .contact-content {
@@ -8,6 +11,8 @@
     flex-direction: column;
     position: relative;
     max-width: 1720px;
+    height: 700px;
+    width: 100%;
     padding: 37px 100px;
 
     .contact-header {
@@ -100,11 +105,81 @@
             }
 
             .contact-agreement {
-                
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                margin-top: 16px;
+
+                #privacy-policy-check {
+                    display: none;
+
+                    &:checked + label {
+                        background-image: url(../../assets/foreground-elements/custom-checkbox-checked.svg);
+                    }
+
+                }
+
+                label {
+                    height: 24px;
+                    width: 24px;
+                    margin-right: 8px;
+                    background-size: 24px 24px;
+                    background-position: center;
+                    background-image: url(../../assets/foreground-elements/custom-checkbox-unchecked.svg);
+                }
+
+                p {
+                    margin: 0;
+                    color: white;
+
+                    &:nth-child(4) {
+                        cursor: pointer;
+                        display: flex;
+                        padding: 5px 4px;
+                        gap: 10px;
+                        font-size: 16px;
+                        color: #4B47FF;
+                        
+                        &:hover {
+                            text-decoration: underline;
+                        }
+
+                    }
+
+                }
+
+            }
+
+            .submit-button {
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-self: center;
+                border: none;
+                width: max-content;
+                margin-top: 37px;
+                padding: 15px 30px;
+                gap: 10px;
+                border-radius: 10px;
+                font-size: 23px;
+                color: white;
+                background: #00BEE8;
+                box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                transition: 150ms;
+
+                &:hover {
+                    scale: 1.2;
+                }
+
             }
 
         }
 
     }
 
+}
+
+.privacy-policy-unchecked {
+    background-color: #B6B6B6 !important;
 }

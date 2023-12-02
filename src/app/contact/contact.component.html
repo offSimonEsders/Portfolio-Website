@@ -22,18 +22,22 @@
             <form action="" class="contact-form">
                 <div class="contact-form-input-container">
                     <input type="text" placeholder="Your name" class="contact-form-inputs" required>
-                    <input type="text" placeholder="Your email" class="contact-form-inputs" required>
+                    <input type="email" placeholder="Your email" class="contact-form-inputs" required>
                     <textarea name="" id="" cols="30" rows="10" placeholder="Your message" class="contact-form-inputs"
                         required></textarea>
                 </div>
 
                 <div class="contact-agreement">
-                    <input type="checkbox" name="" id="privacy-policy-check">
+                    <input (change)="state()" type="checkbox" name="" id="privacy-policy-check" required>
                     <label for="privacy-policy-check" class="custom-checkbox"></label>
-                    <p>I've read the </p>
-                    <p>privacy policy </p>
+                    <p>I've read the</p>
+                    &nbsp;
+                    <p>privacy policy</p>
+                    &nbsp;
                     <p>and agree to the processing of my data as outlined.</p>
                 </div>
+
+                <button class="submit-button privacy-policy-unchecked" disabled>Send message :&#41;</button>
 
             </form>
 
