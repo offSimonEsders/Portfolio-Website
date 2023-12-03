@@ -16,5 +16,6 @@ export class FooterComponent {
 
   changeRout() {
     this.router.navigate(['/Imprint']);
+    window.scrollTo({ top: 0});
   }
 }
