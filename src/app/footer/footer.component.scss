@@ -1,7 +1,8 @@
 .footer-frame {
+    display: flex;
+    justify-content: center;
     height: 291px;
     background-color: #141D2F;
-    border-top: 4px solid #00BEE8;
 }
 
 .footer-content {
@@ -10,7 +11,9 @@
     justify-content: space-between;
     padding: 37px 100px;
     max-width: 1720px;
+    width: 100%;
     height: calc(100% - 74px);
+    border-top: 4px solid #00BEE8;
 
     div {
         display: flex;

@@ -1,0 +1,25 @@
+.imprint-frame {
+    background-color: #141D2F;
+}
+
+.imprint-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 1720px;
+    padding: 37px 100px;
+    color: white;
+
+    h2 {
+        color: #4B47FF;
+
+        &:nth-child(1) {
+            margin-top: 111px;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: #4B47FF;
+    }
+
+}
