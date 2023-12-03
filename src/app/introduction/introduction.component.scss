@@ -127,11 +127,12 @@
     cursor: pointer;
     display: flex;
     justify-content: center;
+    align-items: center;
     border: none;
-    writing-mode: vertical-lr;
+    rotate: 90deg;
     position: absolute;
-    right: 100px;
-    bottom: 50px;
+    right: 30px;
+    bottom: 150px;
     gap: 3px;
     z-index: 1;
     font-size: 23px;
@@ -141,6 +142,10 @@
 
     &:hover {
         scale: 1.2;
+    }
+
+    img {
+        rotate: -90deg;
     }
 
 }
