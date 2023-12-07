@@ -100,6 +100,8 @@
 }
 
 .job-tag {
+    display: flex;
+    flex-direction: row;
     font-size: 64px;
     color: #4B47FF !important;
 }
@@ -165,4 +167,51 @@
         font-size: 29px;
     }
 
+    .scrolldown-button {
+        display: none;
+    }
+
+}
+
+@media (max-width: 415px) {
+
+    .job-tag {
+        flex-direction: column;
+        
+        div {
+            &:nth-child(2) {
+                transform: translateX(50%);
+            }
+        }
+
+    }
+
+    .link-container {
+        left: 50%;
+        transform: translateX(-50%);
+
+        img {
+            display: none;
+        }
+
+        a {
+            img {
+                display: flex;
+            }
+        }
+
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    .name-tag {
+        font-size: 40px;
+    }
+
+    .job-tag {
+        font-size: 25px;
+    }
+    
 }
