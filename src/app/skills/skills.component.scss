@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     max-height: 1440px !important;
-    height: 60vh;
+    min-height: 60vh;
     background-color: #141D2F;
 }
 
@@ -96,4 +96,82 @@
     top: 25%;
     height: 950px;
     filter: blur(46px);
+}
+
+@media (max-width: 1400px) {
+    .skillsframe {
+        height: 100vh;
+    }
+
+    .skillscontent {
+        flex-direction: column-reverse;
+        gap: 60px;
+    }
+
+    .skill-text-container {
+        top: 0;
+    }
+
+    .skillsymbol-container {
+        justify-content: center;
+        align-self: center;
+        margin-top: 200px;
+        gap: 22px;
+    }
+
+}
+
+@media (max-width:600px) {
+
+    .skillscontent {
+        align-items: center;
+        justify-content: center;
+        padding: 37px 0;
+    }
+
+    .skill-text-container {
+        align-items: center;
+        justify-content: center;
+        right: auto;
+
+        .skill-text-header {
+
+            align-items: center;
+            justify-content: center;
+
+            h2 {
+                text-align: center;
+            }
+
+            img {
+                display: none;
+            }
+        }
+
+        p {
+            text-align: center;
+            width: 320px;
+            padding: 0;
+        }
+
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .skill-text-header {
+        h2 {
+            font-size: 45px !important;
+        }
+    }
+
+    .skill {
+
+        img {
+            width: 45px;
+            height: 45px;
+        }
+
+    }
 }
