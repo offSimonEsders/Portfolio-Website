@@ -16,6 +16,22 @@
     height: calc(100% - 78px);
     border-top: 4px solid #00BEE8;
 
+    .legal-container {
+        display: flex;
+        flex-direction: row;
+
+        p {
+            cursor: pointer;
+            margin: 0;
+            font-size: 16px;
+
+            &:hover {
+                color: #00BEE8;
+            }
+
+        }
+    }
+
     div {
         display: flex;
         flex-direction: column;
@@ -28,16 +44,6 @@
                 font-size: 40px;
             }
 
-            p{
-                cursor: pointer;
-                margin: 0;
-                font-size: 16px;
-
-                &:hover {
-                    color: #00BEE8;
-                }
-
-            }
         }
 
         &:nth-child(2) {
@@ -50,7 +56,7 @@
 
             a {
                 transition: 150ms;
-                
+
                 &:hover {
                     scale: 1.2;
                 }

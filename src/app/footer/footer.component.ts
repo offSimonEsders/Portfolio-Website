@@ -14,8 +14,14 @@ export class FooterComponent {
     
   }
 
-  changeRout() {
+  changeRoutetoImprint() {
     this.router.navigate(['/Imprint']);
     window.scrollTo({ top: 0});
   }
+
+  changeRoutetoDSGVO() {
+    this.router.navigate(['/DSGVO']);
+    window.scrollTo({ top: 0});
+  }
+
 }
