@@ -29,10 +29,10 @@ export class ContactComponent implements AfterViewInit {
 
   state() {
     if (this.privacypolicycheck.checked === true) {
-      this.submitbutton.removeAttribute('disabled');
+      this.buttonactive();
       this.submitbutton.classList.remove('privacy-policy-unchecked');
     } else {
-      this.submitbutton.setAttribute('disabled', 'true');
+      this.buttoninactive();
       this.submitbutton.classList.add('privacy-policy-unchecked');
     }
   }
@@ -55,7 +55,7 @@ export class ContactComponent implements AfterViewInit {
     this.contactforminputcontainer.childNodes.forEach((element: any) => {
       element.setAttribute('disabled', 'true');
     });
-    this.submitbutton.setAttribute('disabled', 'true');
+    this.buttoninactive();
     this.privacypolicycheck.setAttribute('disabled', 'true');
   }
 
@@ -63,8 +63,18 @@ export class ContactComponent implements AfterViewInit {
     this.contactforminputcontainer.childNodes.forEach((element: any) => {
       element.removeAttribute('disabled');
     });
-    this.submitbutton.removeAttribute('disabled');
+    this.buttonactive();
     this.privacypolicycheck.removeAttribute('disabled');
+  }
+
+  buttonactive() {
+    this.submitbutton.removeAttribute('disabled');
+    this.submitbutton.classList.add('submit-button-hover');
+  }
+
+  buttoninactive() {
+    this.submitbutton.setAttribute('disabled', 'true');
+    this.submitbutton.classList.remove('submit-button-hover');
   }
 
   checkResponse(response: any) {

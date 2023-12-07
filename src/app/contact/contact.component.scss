@@ -169,15 +169,18 @@
                 background: #00BEE8;
                 box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
                 transition: 150ms;
-
-                &:hover {
-                    scale: 1.2;
-                }
-
             }
 
         }
 
+    }
+
+}
+
+.submit-button-hover {
+
+    &:hover {
+        scale: 1.2;
     }
 
 }
