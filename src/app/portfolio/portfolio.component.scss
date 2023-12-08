@@ -54,3 +54,27 @@
     flex-direction: column;
     width: 100%;
 }
+
+@media (max-width: 900px) {
+
+    .header-lines {
+
+        img {
+            display: none;
+        }
+
+    }
+
+}
+
+@media (max-width: 500px) {
+ 
+    .header-lines {
+        
+        h2 {
+            font-size: 45px;
+        }
+
+    }
+    
+}
