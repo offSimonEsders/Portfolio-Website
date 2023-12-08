@@ -76,19 +76,18 @@
                 gap: 32px;
 
                 input {
-                    width: 567px;
                     height: 20px;
                 }
 
                 textarea {
                     resize: none;
-                    width: 567px;
                     height: 172px;
                 }
 
                 .contact-form-inputs {
                     display: flex;
                     align-items: center;
+                    width: 567px;
                     gap: 10px;
                     padding: 15px 25px;
                     border-radius: 10px;
@@ -121,6 +120,39 @@
 
                 }
 
+                .content-text-container {
+                    display: flex;
+                    align-items: center;
+
+                    div {
+                        display: flex;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        margin: 0;
+                        color: white;
+
+                        div {
+
+                            &:nth-child(1) {
+                                cursor: pointer;
+                                display: flex;
+                                padding: 5px 4px;
+                                gap: 10px;
+                                font-size: 16px;
+                                color: #4B47FF;
+    
+                                &:hover {
+                                    text-decoration: underline;
+                                }
+    
+                            }
+
+                        }
+
+                    }
+
+                }
+
                 label {
                     height: 24px;
                     width: 24px;
@@ -128,26 +160,6 @@
                     background-size: 24px 24px;
                     background-position: center;
                     background-image: url(../../assets/foreground-elements/custom-checkbox-unchecked.svg);
-                }
-
-                p {
-                    margin: 0;
-                    color: white;
-
-                    &:nth-child(4) {
-                        cursor: pointer;
-                        display: flex;
-                        padding: 5px 4px;
-                        gap: 10px;
-                        font-size: 16px;
-                        color: #4B47FF;
-
-                        &:hover {
-                            text-decoration: underline;
-                        }
-
-                    }
-
                 }
 
             }
@@ -237,4 +249,21 @@
     100% {
         right: -500px;
     }
+}
+
+@media (max-width: 1400px) {
+    .contact-form-input-container {
+        align-items: center;
+        width: 450px;
+
+        .contact-form-inputs {
+            width: 398px !important;
+        }
+
+    }
+
+    .contact-agreement {
+        width: 450px;
+    }
+
 }

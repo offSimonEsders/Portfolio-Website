@@ -23,18 +23,18 @@
                 <div class="contact-form-input-container">
                     <input type="text" placeholder="Your name" name="name" class="contact-form-inputs" required>
                     <input type="email" placeholder="Your email" name="email" class="contact-form-inputs" required>
-                    <textarea name="message" id="" cols="30" rows="10" placeholder="Your message" class="contact-form-inputs"
-                        required></textarea>
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Your message"
+                        class="contact-form-inputs" required></textarea>
                 </div>
 
                 <div class="contact-agreement">
                     <input (change)="state()" type="checkbox" id="privacy-policy-check" required>
                     <label for="privacy-policy-check" class="custom-checkbox"></label>
-                    <p>I've read the</p>
-                    &nbsp;
-                    <p>privacy policy</p>
-                    &nbsp;
-                    <p>and agree to the processing of my data as outlined.</p>
+                    <div class="content-text-container">
+                        <div>I've read the<div>privacy policy</div>and agree to the &nbsp;<div>processing &nbsp;</div>
+                            <div>of my data as outlined.</div>
+                        </div>
+                    </div>
                 </div>
 
                 <button class="submit-button privacy-policy-unchecked" disabled>Send message :&#41;</button>
