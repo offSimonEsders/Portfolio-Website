@@ -3,7 +3,9 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    position: relative;
     gap: 32px;
+    z-index: 2;
 
     .img-container {
         overflow: hidden;
@@ -67,6 +69,12 @@
                 border-radius: 10px;
                 font-size: 23px;
                 color: white;
+                transition: 150ms;
+
+                &:hover {
+                    scale: 1.2;
+                }
+
             }
 
             .live-test {
@@ -75,6 +83,33 @@
     
             .git-hub {
                 border: 1px solid #00BEE8;
+            }
+
+        }
+
+    }
+
+}
+
+@media (max-width: 1100px) {
+    
+    .project {
+        flex-direction: column;
+
+        .info-container {
+
+            .text-container {
+                text-align: center;
+
+                .skills {
+                    display: flex;
+                    justify-content: center;
+                }
+
+            }
+
+            .link-container {
+                justify-content: center;
             }
 
         }
