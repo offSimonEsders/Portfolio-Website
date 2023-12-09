@@ -160,10 +160,23 @@
 
 @media (max-width: 500px) {
 
-    .skill-text-header {
-        h2 {
-            font-size: 45px !important;
+    .skillsymbol-container {
+        width: 280px;
+    }
+
+    .skill-text-container {
+        gap: 25px;
+
+        .skill-text-header {
+            h2 {
+                font-size: 45px !important;
+            }
         }
+
+        p {
+            width: 280px;
+        }
+
     }
 
     .skill {
