@@ -3,7 +3,7 @@
     justify-content: center;
     background-color: #141D2F;
     max-height: 1440px;
-    height: 800px;
+    min-height: 800px;
 }
 
 .contact-content {
@@ -11,7 +11,7 @@
     flex-direction: column;
     position: relative;
     max-width: 1720px;
-    height: 700px;
+    min-height: 700px;
     width: 100%;
     padding: 37px 100px;
     z-index: 1;
@@ -46,7 +46,6 @@
 
         .contact-text {
             max-width: 473px;
-            width: 100%;
             color: white;
 
             h3 {
@@ -87,7 +86,7 @@
                 .contact-form-inputs {
                     display: flex;
                     align-items: center;
-                    width: 567px;
+                    width: calc(100% - 50px);
                     gap: 10px;
                     padding: 15px 25px;
                     border-radius: 10px;
@@ -123,6 +122,7 @@
                 .content-text-container {
                     display: flex;
                     align-items: center;
+                    width: calc(100% - 12px);
 
                     div {
                         display: flex;
@@ -140,11 +140,11 @@
                                 gap: 10px;
                                 font-size: 16px;
                                 color: #4B47FF;
-    
+
                                 &:hover {
                                     text-decoration: underline;
                                 }
-    
+
                             }
 
                         }
@@ -252,18 +252,85 @@
 }
 
 @media (max-width: 1400px) {
+
+    .contact-content {
+        padding: 37px 0;
+        align-items: center;
+    }
+
+    .contact-text {
+        width: 450px;
+    }
+
     .contact-form-input-container {
         align-items: center;
         width: 450px;
-
-        .contact-form-inputs {
-            width: 398px !important;
-        }
 
     }
 
     .contact-agreement {
         width: 450px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+
+    .contact-content {
+        position: static;
+    }
+
+    .contact-text-and-form-container {
+        position: static !important;
+        flex-direction: column !important;
+        align-items: center;
+        margin-top: 103px;
+        gap: 45px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .contact-header {
+        gap: 5px !important;
+
+        h2 {
+            font-size: 45px !important;
+        }
+
+    }
+
+    .contact-text {
+        width: 280px;
+    }
+
+    .contact-form-input-container {
+        width: 280px;
+
+    }
+
+    .contact-agreement {
+        width: 280px;
+        font-size: 14px;
+    }
+    
+    .content-text-container {
+        font-size: 14px;
+
+        div {
+            font-size: 14px !important;
+
+            div {
+
+                &:nth-child(1) {
+                    padding: 0px 4px;
+                }
+
+            }
+
+        }
+
     }
 
 }

@@ -14,9 +14,18 @@ export class ContactComponent implements AfterViewInit {
   contactform!: HTMLFormElement;
   contactforminputcontainer: any;
   sendmailresponse!: HTMLDivElement;
+  contactheader!: HTMLDivElement;
+  contactcontent!: HTMLDivElement;
+  contacttextandformcontainer!: HTMLDivElement;
 
   constructor() {
-
+    window.addEventListener('resize', () => {
+      if (window.innerWidth < 1200) {
+        this.setMarginofContactTextAndFormContainer();
+      } else {
+        this.setMargintoStandartofContactTextAndFormContainer();
+      }
+    });
   }
 
   ngAfterViewInit(): void {
@@ -25,6 +34,9 @@ export class ContactComponent implements AfterViewInit {
     this.contactform = <HTMLFormElement>document.querySelector('.contact-form');
     this.contactforminputcontainer = document.querySelector('.contact-form-input-container');
     this.sendmailresponse = <HTMLDivElement>document.querySelector('.send-mail-response');
+    this.contactheader = <HTMLDivElement>document.querySelector('.contact-header');
+    this.contactcontent = <HTMLDivElement>document.querySelector('.contact-content');
+    this.contacttextandformcontainer = <HTMLDivElement>document.querySelector('.contact-text-and-form-container');
   }
 
   state() {
@@ -108,6 +120,14 @@ export class ContactComponent implements AfterViewInit {
     setTimeout(() => {
       this.sendmailresponse.style.display = 'none';
     }, 4000);
+  }
+
+  setMarginofContactTextAndFormContainer() {
+    this.contacttextandformcontainer.style.marginTop = this.contactheader.offsetHeight + 25 + 'px';
+  }
+
+  setMargintoStandartofContactTextAndFormContainer() {
+    this.contacttextandformcontainer.style.marginTop = '0px';
   }
 
 }
