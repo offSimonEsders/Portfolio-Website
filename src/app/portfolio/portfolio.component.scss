@@ -68,6 +68,19 @@
 }
 
 @media (max-width: 500px) {
+
+    .portfolio-header {
+
+        p {
+            align-self: center;
+            width: 280px;
+        }
+
+    }
+
+    .portfolio-content {
+        gap: 0;
+    }
  
     .header-lines {
         
