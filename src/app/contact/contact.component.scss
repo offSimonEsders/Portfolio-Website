@@ -1,6 +1,7 @@
 .contact-frame {
     display: flex;
     justify-content: center;
+    position: relative;
     background-color: #141D2F;
     max-height: 1440px;
     min-height: 800px;
@@ -224,10 +225,12 @@
     z-index: 0 !important;
 
     .lightblue-shadow {
+        pointer-events: none !important;
         position: absolute;
         height: 650px;
         top: 25px;
         right: -300px;
+        z-index: 0 !important;
         filter: blur(46px);
     }
 
@@ -277,7 +280,7 @@
 @media (max-width: 1200px) {
 
     .contact-content {
-        position: static;
+        position: relative;
     }
 
     .contact-text-and-form-container {

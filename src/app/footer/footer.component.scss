@@ -66,4 +66,25 @@
 
     }
 
+    .legal-container-responsive {
+        display: none;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .footer-content {
+        justify-content: space-around;
+        flex-direction: column;
+        position: relative;
+        padding: 37px 0;
+    }
+
+    .legal-container {
+        display: none !important;
+    }
+
+    .legal-container-responsive {
+        display: flex !important;
+    }
 }
