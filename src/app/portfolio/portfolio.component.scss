@@ -56,6 +56,16 @@
     width: 100%;
 }
 
+@media (max-width: 1200px) {
+    .header-lines {
+        
+        img {
+            width: 25% !important;
+        }
+
+    }
+}
+
 @media (max-width: 900px) {
 
     .header-lines {
