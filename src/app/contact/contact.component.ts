@@ -19,12 +19,11 @@ export class ContactComponent implements AfterViewInit {
   contacttextandformcontainer!: HTMLDivElement;
 
   constructor() {
+    document.addEventListener('DOMContentLoaded', () => {
+      this.checkWindowWidth();
+    });
     window.addEventListener('resize', () => {
-      if (window.innerWidth < 1200) {
-        this.setMarginofContactTextAndFormContainer();
-      } else {
-        this.setMargintoStandartofContactTextAndFormContainer();
-      }
+      this.checkWindowWidth();
     });
   }
 
@@ -128,6 +127,14 @@ export class ContactComponent implements AfterViewInit {
 
   setMargintoStandartofContactTextAndFormContainer() {
     this.contacttextandformcontainer.style.marginTop = '0px';
+  }
+
+  checkWindowWidth() {
+    if (window.innerWidth < 1200 && window.innerWidth > 500) {
+      this.setMarginofContactTextAndFormContainer();
+    } else {
+      this.setMargintoStandartofContactTextAndFormContainer();
+    }
   }
 
 }

@@ -284,7 +284,6 @@
         position: static !important;
         flex-direction: column !important;
         align-items: center;
-        margin-top: 103px;
         gap: 45px;
     }
 
@@ -292,17 +291,31 @@
 
 @media (max-width: 500px) {
 
+    .contact-content {
+        gap: 25px;
+    }
+
     .contact-header {
+        align-self: center !important;
+        position: static !important;
         gap: 5px !important;
 
         h2 {
             font-size: 45px !important;
         }
 
+        img {
+            display: none;
+        }
+
     }
 
     .contact-text {
         width: 280px;
+    }
+
+    .contact-text-and-form-container {
+        width: 280px !important;
     }
 
     .contact-form-input-container {

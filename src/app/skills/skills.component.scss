@@ -162,9 +162,11 @@
 
     .skillsymbol-container {
         width: 280px;
+        margin: 0;
     }
 
     .skill-text-container {
+        position: static;
         gap: 25px;
 
         .skill-text-header {
