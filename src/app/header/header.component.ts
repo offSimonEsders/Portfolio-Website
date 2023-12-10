@@ -36,7 +36,6 @@ export class HeaderComponent implements AfterViewInit {
       window.scrollTo({ top: Coordinate });
     } else {
       this.scrollToElementinHome(this.scrollToAbout);
-      
     }
   }
 

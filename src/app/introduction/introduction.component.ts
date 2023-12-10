@@ -12,7 +12,7 @@ export class IntroductionComponent {
   scrollToContact() {
     const element = document.getElementById('contact');
     if (element) {
-      const Coordinate = element.getBoundingClientRect().top + window.pageYOffset - 150;
+      const Coordinate = element.getBoundingClientRect().top + window.pageYOffset - 111;
       window.scrollTo({ top: Coordinate });
     }
   }
