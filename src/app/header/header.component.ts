@@ -29,39 +29,54 @@ export class HeaderComponent implements AfterViewInit {
   scrollToAbout() {
     let element = document.getElementById('aboutme');
     if (element) {
-      element.scrollIntoView({ block: 'start' });
+      let Coordinate = element.getBoundingClientRect().top + window.pageYOffset;
+      if (window.innerWidth <= 1100) {
+        Coordinate -= 111;
+      }
+      window.scrollTo({ top: Coordinate });
     } else {
-      this.setRoute();
-      setTimeout(() => {
-        this.scrollToAbout();
-      }, 100);
+      this.scrollToElementinHome(this.scrollToAbout);
+      
     }
   }
 
   scrollToSkills() {
     let element = document.getElementById('myskills');
     if (element) {
-      const Coordinate = element.getBoundingClientRect().top + window.pageYOffset - 250;
-      window.scrollTo({ top: Coordinate });
+      this.scrollToCoordinate(element);
     } else {
-      this.setRoute();
-      setTimeout(() => {
-        this.scrollToSkills();
-      }, 100);
+      this.scrollToElementinHome(this.scrollToSkills);
     }
   }
 
   scrollToProjects() {
     let element = document.getElementById('projects');
     if (element) {
-      const Coordinate = element.getBoundingClientRect().top + window.pageYOffset - 150;
-      window.scrollTo({ top: Coordinate });
+      this.scrollToCoordinate(element);
     } else {
-      this.setRoute();
-      setTimeout(() => {
-        this.scrollToProjects();
-      }, 100);
+      this.scrollToElementinHome(this.scrollToProjects);
     }
+  }
+
+  scrollToContact() {
+    let element = document.getElementById('contact');
+    if (element) {
+      this.scrollToCoordinate(element);
+    } else {
+      this.scrollToElementinHome(this.scrollToContact);
+    }
+  }
+
+  scrollToCoordinate(element: HTMLElement) {
+    const Coordinate = element.getBoundingClientRect().top + window.pageYOffset - 111;
+    window.scrollTo({ top: Coordinate });
+  }
+
+  scrollToElementinHome(callBack: Function) {
+    this.setRoute();
+    setTimeout(() => {
+      callBack();
+    }, 100);
   }
 
   setRoute() {
