@@ -171,9 +171,19 @@
         display: none;
     }
 
+    .blue-shadow {
+        height: 550px;
+        left: -250px;
+    }
+
+    .green-shadow {
+        height: 500px;
+        right: -300px;
+    }
+
 }
 
-@media (max-width: 415px) {
+@media (max-width: 500px) {
 
     .job-tag {
         flex-direction: column;
@@ -202,9 +212,20 @@
 
     }
 
+    .blue-shadow {
+        height: 350px;
+        left: -150px;
+    }
+
+    .green-shadow {
+        height: 400px;
+        right: -250px;
+        top: 400px;
+    }
+
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
 
     .name-tag {
         font-size: 40px;
