@@ -29,7 +29,7 @@ export class AboutmeComponent implements AfterViewInit {
   }
 
   setFrameHeight() {
-    this.aboutmeframe.style.height = (this.aboutmetext.offsetHeight + this.bigimgframe.offsetHeight) + 'px';
+    this.aboutmeframe.style.height = (this.aboutmetext.offsetHeight + this.bigimgframe.offsetHeight) + 127 + 'px';
   }
 
 }

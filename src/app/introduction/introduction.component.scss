@@ -218,7 +218,7 @@
     }
 
     .green-shadow {
-        height: 400px;
+        height: 350px;
         right: -250px;
         top: 150px;
     }
@@ -235,4 +235,14 @@
         font-size: 25px;
     }
     
+}
+
+@media (max-height: 565px) {
+    .blue-shadow {
+        display: none;
+    }
+
+    .green-shadow {
+        display: none;
+    }
 }
