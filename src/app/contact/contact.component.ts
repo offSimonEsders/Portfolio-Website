@@ -80,11 +80,13 @@ export class ContactComponent implements AfterViewInit {
 
   buttonactive() {
     this.submitbutton.removeAttribute('disabled');
+    this.submitbutton.style.cursor = 'pointer';
     this.submitbutton.classList.add('submit-button-hover');
   }
 
   buttoninactive() {
     this.submitbutton.setAttribute('disabled', 'true');
+    this.submitbutton.style.cursor = 'not-allowed';
     this.submitbutton.classList.remove('submit-button-hover');
   }
 
