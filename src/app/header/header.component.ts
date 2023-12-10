@@ -37,33 +37,29 @@ export class HeaderComponent implements AfterViewInit {
     } else {
       this.scrollToElementinHome(this.scrollToAbout);
     }
+    this.closeMenu();
   }
 
   scrollToSkills() {
-    let element = document.getElementById('myskills');
-    if (element) {
-      this.scrollToCoordinate(element);
-    } else {
-      this.scrollToElementinHome(this.scrollToSkills);
-    }
+    this.setupForScrollTo('myskills');
   }
 
   scrollToProjects() {
-    let element = document.getElementById('projects');
-    if (element) {
-      this.scrollToCoordinate(element);
-    } else {
-      this.scrollToElementinHome(this.scrollToProjects);
-    }
+    this.setupForScrollTo('projects');
   }
 
   scrollToContact() {
-    let element = document.getElementById('contact');
+    this.setupForScrollTo('contact');
+  }
+
+  setupForScrollTo(id: string) {
+    let element = document.getElementById(id);
     if (element) {
       this.scrollToCoordinate(element);
     } else {
       this.scrollToElementinHome(this.scrollToContact);
     }
+    this.closeMenu();
   }
 
   scrollToCoordinate(element: HTMLElement) {
@@ -92,6 +88,12 @@ export class HeaderComponent implements AfterViewInit {
         document.body.style.overflow = 'auto';
       }
     }
+  }
+
+  closeMenu() {
+    this.burgermenucheckbox.checked = false;
+    this.menucontainer.style.display = 'none';
+    document.body.style.overflow = 'auto';
   }
 
 }
