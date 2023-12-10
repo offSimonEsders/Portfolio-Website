@@ -10,7 +10,7 @@
     padding: 37px 100px;
     color: white;
 
-    h2 {
+    h1{
         color: #4B47FF;
 
         &:nth-child(1) {
@@ -23,4 +23,10 @@
         color: #4B47FF;
     }
 
+}
+
+@media (max-width: 520px) {
+    .dsgvo-content {
+        padding: 37px 5px;
+    }
 }
