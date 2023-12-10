@@ -38,11 +38,7 @@
         text-decoration: none;
         font-size: 23px;
         color: white;
-
-        &:hover {
-            color: #00BEE8;
-        }
-
+        position: relative;
     }
 
 }
@@ -88,23 +84,44 @@
     gap: 29px;
 
     a {
+        cursor: pointer;
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
         text-decoration: none;
-        width: 114px;
+        width: max-content;
         height: 32px;
         padding: 0px 1px 4px 0px;
         font-size: 23px;
         color: white;
         transition: 150ms;
-
-        &:hover {
-            scale: 1.2;
-        }
-
     }
 
+}
+
+.hover-line {
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width: 0;
+        transition: 150ms ease-in-out;
+        background-color: #00BEE8;
+    }
+
+    &:hover::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width: 80%;
+        transition: 150ms ease-in-out;
+        background-color: #00BEE8;
+    }
 }
 
 @media (max-width: 650px) {
