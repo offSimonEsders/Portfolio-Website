@@ -90,14 +90,6 @@
 
 }
 
-.skill-shadow {
-    position: absolute;
-    left: 0px;
-    top: 25%;
-    height: 950px;
-    filter: blur(46px);
-}
-
 @media (max-width: 1400px) {
 
     .skillscontent {
@@ -187,7 +179,4 @@
 
     }
 
-    .skill-shadow {
-        height: 750px;
-    }
 }

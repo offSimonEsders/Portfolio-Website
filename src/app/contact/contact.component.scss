@@ -215,27 +215,6 @@
     animation: show-mail-response 4s;
 }
 
-.shadow-container {
-    position: absolute;
-    overflow: hidden;
-    top: -400px;
-    right: 0px;
-    height: 700px;
-    width: 500px;
-    z-index: 0 !important;
-
-    .lightblue-shadow {
-        pointer-events: none !important;
-        position: absolute;
-        height: 650px;
-        top: 25px;
-        right: -300px;
-        z-index: 0 !important;
-        filter: blur(46px);
-    }
-
-}
-
 @keyframes show-mail-response {
     0% {
         right: -500px;
