@@ -1,16 +1,16 @@
-.imprint-frame {
+.dsgvo-frame {
     background-color: #141D2F;
     min-height: 100vh;
 }
 
-.imprint-content {
+.dsgvo-content {
     display: flex;
     flex-direction: column;
     max-width: 1720px;
     padding: 37px 100px;
     color: white;
 
-    h2 {
+    h1{
         color: #4B47FF;
 
         &:nth-child(1) {
@@ -26,7 +26,13 @@
 }
 
 @media (max-width: 520px) {
-    .imprint-content {
+    .dsgvo-content {
+        max-width: 1910px;
         padding: 37px 5px;
+
+        h1 {
+            word-break: break-all;
+        }
+
     }
 }
