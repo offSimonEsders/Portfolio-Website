@@ -1,16 +1,25 @@
-import { Component } from '@angular/core';
+import { NgFor } from '@angular/common';
+import { AfterViewInit, Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [],
+  imports: [NgFor],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
-export class HeaderComponent {
+export class HeaderComponent implements AfterViewInit {
+
+  burgermenucheckbox!: HTMLInputElement;
+  menucontainer!: HTMLDivElement;
 
   constructor(private router: Router) { }
+  ngAfterViewInit(): void {
+    this.burgermenucheckbox = <HTMLInputElement>document.getElementById('burger-menu-checkbox');
+    this.menucontainer = <HTMLDivElement>document.querySelector('.menu-container');
+    this.changeMenuVisibility();
+  }
 
   scrollToTop() {
     this.setRoute();
@@ -57,6 +66,18 @@ export class HeaderComponent {
 
   setRoute() {
     this.router.navigate(['/']);
+  }
+
+  changeMenuVisibility() {
+    this.burgermenucheckbox.onchange = () => {
+      if (this.burgermenucheckbox.checked) {
+        this.menucontainer.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+      } else {
+        this.menucontainer.style.display = 'none';
+        document.body.style.overflow = 'auto';
+      }
+    }
   }
 
 }

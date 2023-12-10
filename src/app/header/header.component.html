@@ -7,7 +7,24 @@
         <div class="linkcontainer">
             <a (click)="scrollToAbout()">About me</a>
             <a (click)="scrollToSkills()">Skills</a>
-            <a (click)="scrollToProjects()" >Portfolio</a>
+            <a (click)="scrollToProjects()">Portfolio</a>
+        </div>
+
+        <input type="checkbox" name="" id="burger-menu-checkbox">
+        <label for="burger-menu-checkbox" class="burger-menu">
+            <img src="../../assets/foreground-elements/part-of-burger-menu.svg" alt=""
+                *ngFor="let i of [].constructor(3); let index = index">
+        </label>
+
+    </div>
+
+    <div class="menu-container">
+        <div class="burger-menu-links">
+            <a href="">About me</a>
+            <a href="">Skills</a>
+            <a href="">Portfolio</a>
+            <a href="">Contact</a>
         </div>
     </div>
+
 </div>
