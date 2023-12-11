@@ -185,17 +185,6 @@
 
 @media (max-width: 520px) {
 
-    .job-tag {
-        flex-direction: column;
-        
-        div {
-            &:nth-child(2) {
-                transform: translateX(50%);
-            }
-        }
-
-    }
-
     .link-container {
         left: 50%;
         transform: translateX(-50%);
@@ -227,12 +216,16 @@
 
 @media (max-width: 400px) {
 
+    .oblique-text {
+        font-size: 25px;
+    }
+
     .name-tag {
-        font-size: 40px;
+        font-size: 35px;
     }
 
     .job-tag {
-        font-size: 25px;
+        font-size: 20px;
     }
     
 }
