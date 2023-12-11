@@ -14,7 +14,7 @@ export class ProjectComponent {
   projects = [this.join];
 
   notWorkingyet() {
-    alert("Ich überarbeite das projekt gerade nochmal deswegen hab ich es noch nicht hochgeladen und auch nicht auf Github hochgeladen.")
+    alert("Ich überarbeite das projekt gerade nochmal deswegen hab ich es noch nicht auf Github hochgeladen.")
   }
 
 }
