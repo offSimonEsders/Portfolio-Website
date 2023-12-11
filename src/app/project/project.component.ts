@@ -12,4 +12,9 @@ import { NgFor } from '@angular/common';
 export class ProjectComponent {
   join = new Project('Join', 'Javascript | HTML | CSS', 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.', 'join.simon-esders.de', '');
   projects = [this.join];
+
+  notWorkingyet() {
+    alert("Ich überarbeite das projekt gerade nochmal deswegen hab ich es noch nicht hochgeladen und auch nicht auf Github hochgeladen.")
+  }
+
 }
