@@ -90,6 +90,21 @@
 
 }
 
+.skillscontent-translated {
+    flex-direction: column-reverse !important;
+    gap: 60px !important;
+}
+
+.skillsymbol-container-translated {
+    justify-content: center !important;
+    align-self: center !important;
+    gap: 22px !important;
+}
+
+.skill-text-container-translated {
+    top: 0 !important;
+}
+
 @media (max-width: 1400px) {
 
     .skillscontent {
@@ -104,7 +119,6 @@
     .skillsymbol-container {
         justify-content: center;
         align-self: center;
-        margin-top: 200px;
         gap: 22px;
     }
 
