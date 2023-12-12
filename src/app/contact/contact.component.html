@@ -31,7 +31,7 @@
                     <input (change)="state()" type="checkbox" id="privacy-policy-check" required>
                     <label for="privacy-policy-check" class="custom-checkbox"></label>
                     <div class="content-text-container">
-                        <div>I've read the<div>privacy policy</div> <div>and agree &nbsp;</div> to the &nbsp;<div>processing &nbsp;</div> <div>of my data &nbsp;</div> <div>as &nbsp;</div> <div>outlined.</div>
+                        <div>I've read the<div (click)="changeRoutetoDSGVO()">privacy policy</div> <div>and agree &nbsp;</div> to the &nbsp;<div>processing &nbsp;</div> <div>of my data &nbsp;</div> <div>as &nbsp;</div> <div>outlined.</div>
                         </div>
                     </div>
                 </div>

@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-contact',
@@ -18,7 +19,7 @@ export class ContactComponent implements AfterViewInit {
   contactcontent!: HTMLDivElement;
   contacttextandformcontainer!: HTMLDivElement;
 
-  constructor() {
+  constructor(private router: Router) {
     document.addEventListener('DOMContentLoaded', () => {
       this.checkWindowWidth();
     });
@@ -137,6 +138,11 @@ export class ContactComponent implements AfterViewInit {
     } else {
       this.setMargintoStandartofContactTextAndFormContainer();
     }
+  }
+
+  changeRoutetoDSGVO() {
+    this.router.navigate(['/DSGVO']);
+    window.scrollTo({ top: 0});
   }
 
 }
