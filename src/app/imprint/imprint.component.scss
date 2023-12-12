@@ -1,9 +1,9 @@
-.dsgvo-frame {
+.imprint-frame {
     background-color: #141D2F;
     min-height: 100vh;
 }
 
-.dsgvo-content {
+.imprint-content {
     display: flex;
     flex-direction: column;
     max-width: 1720px;
@@ -26,7 +26,7 @@
 }
 
 @media (max-width: 520px) {
-    .dsgvo-content {
+    .imprint-content {
         max-width: 1910px;
         padding: 37px 5px;
 
